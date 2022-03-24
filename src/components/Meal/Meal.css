@@ -1,0 +1,13 @@
+.meal-container{
+    border: 2.5px solid cyan;
+    border-radius: 25px;
+    margin: 15px;
+}
+.meal-container img{
+    width: 413px;
+    height: 300px;
+    border-radius: 25px;
+}
+.meal-description{
+    text-align: center;
+}

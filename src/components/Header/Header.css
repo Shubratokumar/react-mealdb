@@ -1,0 +1,21 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    background-color: mediumpurple;
+    padding: 10px 20px;
+}
+.nav-logo img{
+    width: 250px;
+    height: 80px;
+    border-radius: 50px;
+}
+.nav-link a{
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+}
+.nav-link a:hover{
+    color: orangered;
+}
