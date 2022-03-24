@@ -5,12 +5,13 @@ import './Meals.css';
 const Meals = () => {
     const [meals, setMeals] = useState([])
 
-    // load american, Indian, seafood and Canadian foods in maelDb
+    // load american, Indian, seafood, random and Canadian foods in maelDb
     useEffect(() => {
         // fetch('https://www.themealdb.com/api/json/v1/1/filter.php?a=American')
         // fetch('https://www.themealdb.com/api/json/v1/1/filter.php?a=Indian')
         // fetch('https://www.themealdb.com/api/json/v1/1/filter.php?a=Canadian')
-        fetch('https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood')
+        // fetch('https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood')
+        fetch('https://www.themealdb.com/api/json/v1/1/random.php')
         .then(res => res.json())
         .then(data => setMeals(data.meals))
     }, [])
